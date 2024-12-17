@@ -21,9 +21,6 @@ jobs:
         with:
           python-version: '3.8'
 
-      - name: Install dependencies
-        run: |
-          pip install -r lab1.txt
 
       - name: Run tests
         run: |
