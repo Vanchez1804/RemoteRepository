@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Проверка кода из репозитория
+      # Проверка кода из репозитори
       - name: Checkout code
         uses: actions/checkout@v3
 
