@@ -29,7 +29,7 @@ jobs:
 
       # Компиляция тестовой программы
       - name: Build tests
-        run: g++ -o test test.cpp main.cpp
+        run: g++ -o test devtest.cpp main.cpp
 
       # Запуск тестов
       - name: Run tests
