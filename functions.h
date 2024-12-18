@@ -4,6 +4,7 @@
 
 int Add(int a, int b);
 int Subtract(int a, int b);
+int Square(int a, int b);
 
 #endif
 
