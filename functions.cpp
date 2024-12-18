@@ -9,6 +9,6 @@ int Subtract(int a, int b) {
 }
 
 // Новая функция для вычисления квадрата числа
-int Square(int a) {
+int Square(int x) {
     return x * x;
 }
