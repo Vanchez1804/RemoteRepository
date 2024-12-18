@@ -1,5 +1,7 @@
+// test.cpp
+#include "functions.h"
 #include <iostream>
-#include <cassert> // Для проверки через assert
+#include <cassert>
 
 void TestAdd() {
     assert(Add(2, 3) == 5);  // 2 + 3 должно быть равно 5
@@ -21,3 +23,4 @@ int main() {
     std::cout << "All tests passed!" << std::endl;
     return 0;
 }
+
