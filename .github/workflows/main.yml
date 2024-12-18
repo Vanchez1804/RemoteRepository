@@ -1,4 +1,4 @@
-name: C++ CI Pipeline
+name: C++ CI with Tests
 
 on:
   push:
@@ -7,7 +7,6 @@ on:
   pull_request:
     branches:
       - main
-      - dev
 
 jobs:
   build:
@@ -18,14 +17,19 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Установка необходимых инструментов
-      - name: Install dependencies
+      # Установка компилятора
+      - name: Install GCC
         run: sudo apt-get update && sudo apt-get install -y g++
 
-      # Компиляция программы
-      - name: Build C++ program
+      # Компиляция основной программы
+      - name: Build main program
         run: g++ -o main main.cpp
 
-      # Запуск программы
-      - name: Run the program
-        run: ./main
+      # Компиляция тестовой программы
+      - name: Build tests
+        run: g++ -o test test.cpp main.cpp
+
+      # Запуск тестов
+      - name: Run tests
+        run: ./test
+
