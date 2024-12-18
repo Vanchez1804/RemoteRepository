@@ -1,16 +1,10 @@
-#include "functions.h"
+// functions.h
+#ifndef FUNCTIONS_H
+#define FUNCTIONS_H
 
-int Add(int a, int b) {
-    return a + b;
-}
+int Add(int a, int b);
+int Subtract(int a, int b);
 
-int Subtract(int a, int b) {
-    return a - b;
-}
-
-// Новая функция для вычисления квадрата числа
-int Square(int a) {
-    return a * a;
-}
+#endif
 
 
