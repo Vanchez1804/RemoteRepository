@@ -13,7 +13,7 @@ void TestSubtract() {
 }
 
 void TestSquare() {
-    assert(Square(2) == 4);  // 2 * 2 должно быть равно 4
+    assert(Square(3) == 9);  // 3 * 3 должно быть равно 9
     std::cout << "TestSubtract passed!" << std::endl;
 }
 
