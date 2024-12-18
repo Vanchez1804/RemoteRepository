@@ -1,4 +1,3 @@
-// test.cpp
 #include "functions.h"
 #include <iostream>
 #include <cassert>
@@ -17,10 +16,4 @@ void TestSubtract() {
     std::cout << "TestSubtract passed!" << std::endl;
 }
 
-int main() {
-    TestAdd();
-    TestSubtract();
-    std::cout << "All tests passed!" << std::endl;
-    return 0;
-}
 
