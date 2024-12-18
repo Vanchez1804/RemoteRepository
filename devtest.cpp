@@ -1,4 +1,4 @@
-#include "functions.h"
+#include "functions.cpp"
 #include <iostream>
 #include <cassert>
 
