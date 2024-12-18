@@ -12,12 +12,11 @@ void TestSubtract() {
     std::cout << "TestSubtract passed!" << std::endl;
 }
 
-int main() {
-    TestAdd();
-    TestSubtract();
-    std::cout << "All tests passed!" << std::endl;
-    return 0;
+void TestSquare() {
+    assert(Square(2) == 4);  // 2 * 2 должно быть равно 4
+    std::cout << "TestSubtract passed!" << std::endl;
 }
+
 
 
 
